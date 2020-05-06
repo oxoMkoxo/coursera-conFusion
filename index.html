@@ -41,8 +41,14 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
-                    <img src="./img/logo.png" alt="confusion" class="img-fluid">
+                <div class="col-12 col-md-6 row align-items-center">
+                    <div class="col-12 col-md-6">
+                        <img src="./img/logo.png" alt="confusion" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <a href="#reserveTableForm" class="btn btn-warning d-block align-self-center px-auto">Reserve Table</a>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -70,8 +76,13 @@
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col col-sm order-sm-last col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <div class="media">
+                    <div class="media-body">
+                        <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger text-white">NEW</span></h2>
+                        <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                    </div>
+                    <img src="./img/buffet.png" alt="buffet" class="d-flex img-thumbnail ml-3 align-self-center">
+                </div>
             </div>
         </div>
 
@@ -86,6 +97,61 @@
                         <h2 class="mt-0">Alberto Somayya</h2>
                         <h4>Executive Chef</h4>
                         <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="reserveTableForm" class="row row-content justify-content-center">
+            <div class="col-12 col-sm-8">
+                <div class="card">
+                    <div class="card-header bg-warning text-white">
+                        <h3>Reserve a Table</h3>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group row">
+                                <label for="noOfGuests" class="col-12 col-md-2 col-form-label">Number of guests</label>
+                                <div class="col-12 col-md-10 p-md-3">
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" name="Guests" id="radio1" value="1" class="form-check-input">
+                                        <label for="radio1" class="form-check-label">1</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" name="Guests" id="radio2" value="2" class="form-check-input">
+                                        <label for="radio2" class="form-check-label">2</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" name="Guests" id="radio3" value="3" class="form-check-input">
+                                        <label for="radio3" class="form-check-label">3</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" name="Guests" id="radio4" value="4" class="form-check-input">
+                                        <label for="radio4" class="form-check-label">4</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" name="Guests" id="radio5" value="5" class="form-check-input">
+                                        <label for="radio5" class="form-check-label">5</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" name="Guests" id="radio6" value="6" class="form-check-input">
+                                        <label for="radio6" class="form-check-label">6</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="Date" class="col-12 col-md-2 col-form-label">Date and Time</label>
+                                <div class="col-12 col-md-10">
+                                    <input class="col-12 col-md-5 form-control d-md-inline mr-2" type="text" placeholder="Date" name="date" id="Date">
+                                    <input class="col-12 col-md-5 form-control d-md-inline" type="text" placeholder="Time" name="time" id="Time">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-2 offset-md-2">
+                                    <a href="#" class="btn btn-primary">Reserve</a>
+                                </div>
+                            </div>
+
+                        </form>
                     </div>
                 </div>
             </div>
