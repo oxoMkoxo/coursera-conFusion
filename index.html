@@ -28,7 +28,7 @@
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card"></span> Contact us</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a class="btn" data-toggle="modal" data-target="#loginModal"> <span class="fa fa-sign-in"></span> Login</a>
+                    <a class="btn" id="loginModalButton"> <span class="fa fa-sign-in"></span> Login</a>
                 </span>
                 
             </div>
@@ -159,7 +159,7 @@
                     </div>
                     <div class="col-12 col-md-6">
                         <!-- Changed the tooltip functionality responds to hover instead of toggle -->
-                        <a class="btn btn-warning d-block align-self-center px-auto" data-hover="tooltip" data-html="true" title="Or Call us at  <br><strong>+852 12345678</strong>" data-placement="bottom" data-toggle="modal" data-target="#reserveTableForm">Reserve Table</a>
+                        <a class="btn btn-warning d-block align-self-center px-auto"  title="Or Call us at  <br><strong>+852 12345678</strong>" id="reserveTableModalButton">Reserve Table</a>
                     </div>
 
                 </div>
@@ -319,9 +319,9 @@
      <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
      <script>
         //  INIT tooltip on hover
-        $(document).ready(function(){
-            $('[data-hover="tooltip"').tooltip();
-        });
+        // $(document).ready(function(){
+        //     $('[data-hover="tooltip"').tooltip();
+        // });
 
         // Carousel Buttons function
         // $(document).ready(function(){
@@ -350,6 +350,26 @@
                     $($('#carouselButton').children('span').addClass('fa-pause'));
 
                 }
+            });
+        });
+        // reserve Table Model js
+        $(document).ready(function(){
+            $('#reserveTableModalButton').click(function(){
+                $('#reserveTableForm').modal('toggle');
+            });
+
+            // This adds attributes and show tooltip on hover
+            $('#reserveTableModalButton').hover(function(){
+                $('#reserveTableModalButton').attr('data-html', 'true');
+                $('#reserveTableModalButton').attr('data-placement', 'bottom');
+                $('#reserveTableModalButton').tooltip('toggle');
+            });
+        });
+
+        // login Table Model js
+        $(document).ready(function(){
+            $('#loginModalButton').click(function(){
+                $('#loginModal').modal('toggle');
             });
         });
      </script>
