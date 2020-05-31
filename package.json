@@ -17,7 +17,7 @@
     "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
     "deploy": "gh-pages -d dist"
   },
-  "author": "",
+  "author": "Mohit Kumar",
   "license": "ISC",
   "devDependencies": {
     "cssmin": "^0.4.3",
