@@ -1,7 +1,7 @@
 $lt-gray: #ddd;
-$background-dark: #512DA8;
-$background-light: #9575CD;
-$background-pale: #D1C4E9;
+$background-dark: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+$background-light: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+$background-pale: #E6E6FA;
 
 // Height variables
 $carousel-item-height: 300px;
@@ -44,7 +44,7 @@ body{
 }
 
 .navbar-dark {
-     background-color: $background-dark;
+     background: $background-dark;
 }
 
 .tab-content {
